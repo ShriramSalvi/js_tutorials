@@ -53,3 +53,19 @@
   let myfun3 = (num1,num2)=>(num1+num2); /// no need of return /// auto  returns the addition
                                          /// this syntax used to return object ex
                                          // ({name:"shriram salvi"})
+
+
+//+++++++IIFE : Immediately invoked function expression +++++++++///
+
+/* Usage : 1) to avoid global variable polution
+           2) ex used in DB connections */ 
+// syntax ()(); first () used for defination and declaratiion and second  () for calling 
+             // and ";" used for termination example 
+
+(function myfun4(){
+    console.log("DB connected")
+})();
+
+(()=>{
+    console.log("DB connection 2")
+})();  ///i.e IIFE can be created using arrow function as well as non arrow functions
