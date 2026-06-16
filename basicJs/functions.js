@@ -20,3 +20,36 @@
   }
 
   console.log(myFunction(6,7)); /// in this type we can call the function after declaration only
+
+
+  /// ++++++++ concept of this, => function ++++++++++++///
+
+  /// this refferse to current instance similar to cpp 
+
+
+     
+  // note1 ------> "this" with normal functions<-----------------
+
+//   function myFun(){
+//     console.log("using this in normal function");
+//     console.log(this) ///  output returned is a global object which includes so many thigs
+//   }
+
+//   myFun();
+
+
+
+  // note 2-------> this with arrow function<--------------
+
+  let myfun2 = ()=>{
+    console.log("using this with arrow function");
+    console.log(this); /// here output is {} i.e empty object
+  }
+  myfun2();
+
+
+  /// whenever we use { } curly brackets we have to use "return" if the function is returning somethig 
+
+  let myfun3 = (num1,num2)=>(num1+num2); /// no need of return /// auto  returns the addition
+                                         /// this syntax used to return object ex
+                                         // ({name:"shriram salvi"})
